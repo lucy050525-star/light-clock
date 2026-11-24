@@ -1,0 +1,37 @@
+html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
+
+#sky { position: fixed; inset: 0; }
+
+#photo {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+#orb {
+  position: fixed;
+  width: 22vmin;
+  height: 22vmin;
+  transform: translate(-50%, -50%);
+}
+#glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  filter: blur(6px);
+}
+#dots { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+#bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 18px;
+  cursor: pointer;
+}
+#now { position: absolute; top: -6px; width: 2px; height: 30px; background: #fff; pointer-events: none; }
